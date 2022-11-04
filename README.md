@@ -1,1 +1,1 @@
-Andy is a foolish boy!
+俊豪是傻逼
