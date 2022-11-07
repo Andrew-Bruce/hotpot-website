@@ -1,25 +1,46 @@
 <!DOCTYPE html>
+
+<style>
+  .bigTitle {
+      color: yellow
+  }
+  .defaultWhite {
+      color: white
+  }
+  .mainBody {
+      background-image: url("images/background.jpg");
+      background-size: cover;
+  }
+</style>
+
+
+
 <html lang="en">
   <head>
+    <link rel="icon" type="image/ico" href="images/icon.png">
     <meta charset="utf-8">
-    <title> test asdf </title>
+    <title id="pageTitle"></title>
   </head>
+  <body class="mainBody">
 
-  <body>
 
-    <button onclick="changeLanguage('en')">
-      Change to English
-    </button>
-    <button onclick="changeLanguage('zh')">
-      Change to 中文
-    </button>
+    <div>
+      <button onclick="changeLanguage('en')">
+	Change to English
+      </button>
+      <button onclick="changeLanguage('zh')">
+	Change to 中文
+      </button>
+    </div>
 
-    <h1 id= "chinaPassion_title"></h1>
-    <p id= "welcomeInfo"></p>
-    <p id= "contactInfo"></p>
+    <div class="defaultWhite">
+      <h1 id="chinaPassion_title" class="bigTitle"></h1>
+      <p id="welcomeInfo"></p>
+      <p id="contactInfo"></p>
+    </div>
     
-    <script src="pee.js"> </script>
   </body>
+  <script src="pee.js"> </script>
 </html>
     
     

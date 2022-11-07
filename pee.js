@@ -2,6 +2,12 @@ g = {};
 
 
 var localizationDict = {
+    pageTitle: {
+	en:
+	"China Passion Spicy Hot Pot Flavor",
+	zh:
+	"中国 Passion 火锅店",
+    },
     welcomeInfo: {
 	en:
 	"We will reopen buisness on 11/21",
