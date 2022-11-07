@@ -2,13 +2,38 @@
 
 <style>
   .bigTitle {
-      color: yellow
+      color: yellow;
   }
-  .defaultWhite {
-      color: white
+  .defaultBlack {
+      color: black;
+      
   }
   .mainBody {
+      background-color: black;
+  }
+  .topDiv {
       background-image: url("images/background.jpg");
+      background-size: cover;
+      padding-bottom: 300px;
+      text-align: center;
+  }
+  .whiteTransparentDiv{
+      background-color: rgba(255, 255, 255, 0.6);
+  }
+  .languageButton {
+      text-align: center;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      
+      color: black;
+      font-weight: 900;
+  }
+  .englishLanguageButton {
+      background: url("images/english_selector.png");
+      background-size: cover;
+  }
+  .chineseLanguageButton {
+      background: url("images/chinese_selector.png");
       background-size: cover;
   }
 </style>
@@ -25,18 +50,22 @@
 
 
     <div>
-      <button onclick="changeLanguage('en')">
-	Change to English
+      <button class="languageButton englishLanguageButton" onclick="changeLanguage('en')">
+	English
       </button>
-      <button onclick="changeLanguage('zh')">
-	Change to 中文
+      <button class="languageButton chineseLanguageButton" onclick="changeLanguage('zh')">
+	中文
       </button>
     </div>
 
-    <div class="defaultWhite">
-      <h1 id="chinaPassion_title" class="bigTitle"></h1>
-      <p id="welcomeInfo"></p>
-      <p id="contactInfo"></p>
+    <div class="topDiv">
+      <div class="whiteTransparentDiv">
+	<div class="defaultBlack">
+	  <h1 id="chinaPassion_title" class="bigTitle"></h1>
+	  <p id="welcomeInfo"></p>
+	  <p id="contactInfo"></p>
+	</div>
+      </div>
     </div>
     
   </body>

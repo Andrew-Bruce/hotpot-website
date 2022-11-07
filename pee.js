@@ -54,5 +54,6 @@ function changeLanguage(lang){
 }
 
 
-
+console.log("why are you looking at our javascript console????, go away")
 changeLanguage("en");
+
