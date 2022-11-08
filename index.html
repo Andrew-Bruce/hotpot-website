@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<style>
+  .mainBody {
+      background-color: black;
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+  }
+  .hardToSee {
+      font-weight: 900;
+      background-color: #000000
+  }
+  .bigTitle {
+      color: yellow;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+  .defaultBlack {
+      color: black;
+  }
+  .defaultWhite {
+      color: white;
+  }
+  .defaultRed {
+      color: red;
+  }
+  .topDiv {
+      background-image: url("images/background.jpg");
+      background-size: cover;
+      padding-bottom: 300px;
+      text-align: center;
+      
+  }
+  .columnHalf {
+      background-color: white;
+      float: left;
+      width: 50%;
+      text-align: center;
+  }
+  .midDiv {
+      background-image: url("images/background2.jpg");
+      background-size: cover;
+      padding-bottom: 300px;
+      text-align: center;
+  }
+  .whiteTransparentDiv{
+      background-color: rgba(255, 255, 255, 0.6);
+  }
+  .fullTransparentDiv{
+      background-color: rgba(255, 255, 255, 0);
+  }
+  .languageButton {
+      text-align: center;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      
+      color: black;
+      font-weight: 900;
+  }
+  .englishLanguageButton {
+      background: url("images/english_selector.png");
+      background-size: cover;
+  }
+  .chineseLanguageButton {
+      background: url("images/chinese_selector.png");
+      background-size: cover;
+  }
+  .contactInfoColumn {
+      background-color: white;
+      float: left;
+      width: 33%;
+      text-align: center;
+      border-right: 1px solid #000000;
+      padding-bottom: 100px;
+  }
+  .contactInfo3Cols {
+      background-color: white;
+  }
+</style>
+
+
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/ico" href="images/icon.png">
+    <meta charset="utf-8">
+    <title id="pageTitle"></title>
+  </head>
+  <body class="mainBody">
+
+
+    <div>
+      <button class="languageButton englishLanguageButton" onclick="changeLanguage('en')">
+	English
+      </button>
+      <button class="languageButton chineseLanguageButton" onclick="changeLanguage('zh')">
+	中文
+      </button>
+    </div>
+
+    <div class="topDiv">
+      <div class="whiteTransparentDiv">
+	<h1 id="chinaPassion_title" class="bigTitle"></h1>
+	<div class="whiteTransparentDiv columnHalf">
+	  <p id="welcomeInfo"></p>
+	  <h1 id="operatingHoursTitle"></h1>
+	  <h2 id="operatingHours" class="defaultRed"></h2>
+	</div>
+	<div class="fullTransparentDiv columnHalf defaultWhite ">
+	  <p id="contactInfo" class="hardToSee"></p>
+	</div>
+      </div>
+    </div>
+
+    <div class="midDiv">
+      <div class="whiteTransparentDiv">
+	<div class="defaultBlack">
+	  <h1 id="notice2" class="bigTitle"></h1>
+	</div>
+      </div>
+    </div>
+
+    <div class="contactInfo3Cols">
+      <div class="contactInfoColumn defaultBlack">
+	<p id="location"></p>
+      </div>
+      <div class="contactInfoColumn defaultBlack">
+	<p id="phoneNumber"></p>
+      </div>
+      <div class="contactInfoColumn defaultBlack">
+	<p id="email"></p>
+      </div>
+    </div>
+  </body>
+  <script src="translation.js"> </script>
+</html>
